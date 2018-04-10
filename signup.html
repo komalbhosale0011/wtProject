@@ -1,0 +1,138 @@
+<html lang="en">
+    <head>
+		<meta charaset="UTF-8">
+		 <link rel="stylesheet" href="newmenu.css">
+		
+
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 18px 0;
+   
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 8%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 15px 25px;
+    background-color: #f44336;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+	</style>
+	<script type="text/javascript">
+		function validateEmail(emailField){
+        var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+
+        if (reg.test(emailField.value) == false) 
+        {
+            alert('Invalid Email Address');
+            return false;
+        }
+
+      
+
+}
+		function  message()
+		{
+			alert("Account created successfully");
+		}	
+		</script>
+</head>
+<body>
+			
+		<nav class="nav-main">
+				<div class="logo">E-BOOK FRIENDLY</div>
+	          <br>
+	          <br>
+          <ul>
+		     <li><a href="demo.html" class="nav-item">Home</a></li>
+			 <li><a href="aboutus.html" class="nav-item">About Us</a></li>
+			  <li><a href="newbook.html" class="nav-item">Books</a>
+				 <div class="nav-content">
+				<div class="nav-sub">
+			 
+					 </div>
+					 </div>
+				 </li>
+			 <li><a href="addbook.html" class="nav-item" >Add Books</a></li>
+			  <li><a href="review.html" class="nav-item">Review</a></li>
+			 <li><a href="contactus.html" class="nav-item" >Contact Us</a></li>
+			 <li><a href="signin1.html" class="nav-item">Sign In </a></li>
+			</ul> 
+			</nav>	
+			
+          <div align="center"><h2>SIGN UP </h2></div>
+
+<form align="center">
+  
+
+  <div class="container">
+	   <label for="username"><b>Usename</b></label>
+    <input type="text" placeholder="pick a username" name="psw"  required><br><br>
+        
+    <label for="uname"><b>Email Id  </b></label>
+    <input type="text" placeholder="Enter vaild Email Id" id="uemail" onblur="validateEmail(this);" ><br>
+	  <label for="mobileno"><b>Mobile No</b></label>
+    <input type="text" placeholder="Enter a current mobile no" name="psw"  required><br><br>
+<br>
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw"  required><br><br>
+        
+   
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+	   <button type="submit" onclick="message()">Sign Up</button>
+   &nbsp &nbsp &nbsp &nbsp &nbsp
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
+
+</body>
+</html>

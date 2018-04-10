@@ -1,0 +1,102 @@
+<html lang="en">
+    <head>
+		<meta charaset="UTF-8">
+		 <link rel="stylesheet" href="newmenu.css">
+		
+
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+
+input[type=checkbox] {
+    width: 20%;
+    padding: 12px 20px;
+    margin: 10px 0;
+   
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 8%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+
+
+
+
+
+
+.container {
+    padding: 16px;
+}
+
+
+
+
+	</style>
+	<script>
+		function  message()
+		{
+			alert("Review send successfully");
+		}	
+		</script>
+</head>
+<body>
+			
+		<nav class="nav-main">
+				<div class="logo">E-BOOK FRIENDLY</div>
+	          <br>
+	          <br>
+          <ul>
+		     <li><a href="demo.html" class="nav-item">Home</a></li>
+			 <li><a href="aboutus.html" class="nav-item">About Us</a></li>
+			  <li><a href="newbook.html" class="nav-item">Books</a>
+				 <div class="nav-content">
+				<div class="nav-sub">
+			 
+					 </div>
+					 </div>
+				 </li>
+			 <li><a href="addbook.html" class="nav-item" >Add Books</a></li>
+			  <li><a href="review.html" class="nav-item">Review</a></li>
+			 <li><a href="contactus.html" class="nav-item" >Contact Us</a></li>
+			 <li><a href="signin1.html" class="nav-item">Sign In </a></li>
+			</ul> 
+			</nav>	
+			
+         
+
+<form align="center">
+	<div align="center"><img src="review.jpg"></div>
+   <div class="container">
+	 <input type="checkbox" name="AWESOME" value="AWESOME"> AWESOME<br>
+    <input type="checkbox" name="EXCELLENT" value="EXCELLENT">EXCELLENT<br>
+	 <input type="checkbox" name="AWESOME" value="AVERAGE"> AVERAGE<br>
+    <input type="checkbox" name="EXCELLENT" value="POOR">POOR<br>
+ 
+	    </div>
+
+        
+   
+ 
+
+  <div class="container" style="background-color:#f1f1f1">
+	   <button type="submit" onclick="message()">SEND</button>
+   </div>
+</form>
+
+</body>
+</html>
+
+		
